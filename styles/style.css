@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,500,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Nunito+Sans:600);
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html, body {
+   height: 100%;
+   font-family: "Roboto";
+   font-size: 16px;
+}
+ul, ol {
+   list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+   padding: 0;
+}
+/*----stick footer at the bottom---------------*/
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+main {
+   flex: 1 0 auto;
+}
+footer {
+   flex-shrink: 0;
+}
+/*--------general styles-----------------------*/
+[class*="__container"] {
+   max-width: 1170px; 
+   width: 100%;
+   margin: 0 auto;
+}
+.logo {
+   display: flex;
+   align-items: center;
+   gap: 12.5px;
+}
+/*отступы безопасности, от прилипания к краям экрана*/
+.header, .footer, .services {
+   padding: 0 20px;
+}
+/*---------header------------------------------*/
+.header {
+   min-height: 80px;
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid #EFEEF3;
+}
+
+/*--------main---------------------------------*/
+.services {
+   margin: 100px 0;
+}
+.services__wrapper {
+   display: flex;
+   gap: 30px;
+}
+.services__item {
+   padding: 40px;
+   border: 1px solid #E5EAF4;
+   border-radius: 8px;
+}
+.services__title {
+   font-family: "Nunito Sans";
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 1.3;
+   letter-spacing: 0.2px;
+   margin-bottom: 40px;
+}
+.services__breadcrumbs {
+   display: block;
+   text-transform: uppercase;
+   line-height: 1.31;
+   color: #7690A8;
+   margin-bottom: 15px;
+}
+[class*="__subtitle"] {
+font-size: 24px;
+font-weight: 400;
+line-height: 0.87;
+color: #16133D;
+letter-spacing: 0.2px;
+margin-bottom: 15px;
+}
+[class*="__text"] {
+  line-height: 1.75; 
+  color: #16133D;
+  padding-right: 15px;
+  text-align: justify;
+}
+[class*="__text"]::after {
+   content: "Learn more";
+   display: block;
+   color: #3DB370;
+   font-weight: 600;
+   line-height: 1.19;
+   margin-top: 30px;
+}
+.services svg {
+   margin-bottom: 30px;
+}
+.services__icon {
+   position: relative;
+   width: 64px;
+   height: 64px;
+   border: 1px solid #1565D81A;
+   border-radius: 16px;
+       margin-bottom: 30px;
+}
+.services__icon svg {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.services__icon svg[id*="green"] {
+   display: none;
+}
+.services__item:hover .services__icon svg[id*="green"] {
+   display: block;
+}
+.services__item:focus .services__icon svg[id*="green"] {
+   display: block;
+      
+}
+.services__item:hover {
+border-color: #3DB370;
+}
+/*------footer---------------------------------*/
+.footer {
+   min-height: 193px;
+   width: 100%;
+   background-color: #16133D;
+   padding: 40px 20px;
+   display: flex;
+   flex-direction: column;
+}
+.footer__container {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+.footer .logo {
+
+}
+.socials {
+   display: flex;
+   gap: 10px;
+}
+.socials__item svg {
+   width: 38px;
+   height: 38px;
+}
+#instagram rect{
+   fill: red!important;
+}
+#logo-title path {
+   fill: #16133D;
+}
+.footer #logo-title path {
+   fill: #ffffff;
+}
+.socials__icon  {
+   fill: #0D0D0D;
+}
+.socials__icon:hover {
+   fill: #3DB370;
+}
